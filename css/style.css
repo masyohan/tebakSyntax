@@ -1,0 +1,109 @@
+body{
+  background-color: #34495e;
+  margin: 0;
+  padding: 0;
+}
+header {
+  top: 0;
+  margin: 0;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+header h1{
+  margin-top: 5px;
+  font-size: 36px;
+}
+#timer {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 48px;
+  margin: 2px 5px;
+  color: red;
+}
+#score {
+  letter-spacing: 1px;
+  font-size: 28px;
+  margin-top: 12px;
+}
+#description,#jawaban{
+  margin-top: 50px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#description h1{
+  font-size: 30px;
+}
+#description p{
+  font-size: 20px;
+}
+
+
+#jawaban input{
+  text-transform: uppercase;
+  width: 120px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: yellow;
+  outline: 0;
+  box-shadow: none;
+  border: 0;
+  background-color: #34495e;
+  border-bottom: 5px solid #FFFFFF;
+}
+.cursor::after {
+  content:'';
+  display:inline-block;
+  margin-left:3px;
+  background-color:white;
+  animation-name:blink;
+  animation-duration:0.5s;
+  animation-iteration-count: infinite;
+}
+h1.cursor::after {
+  height:24px;
+  width:6px;
+}
+p.cursor::after {
+  height:18px;
+  width:4px;
+}
+
+@keyframes blink {
+  0% {
+    opacity:1;
+  }
+  49% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+#submitJawaban,#hintJawaban{
+  font-weight: 700;
+  font-size: 21px;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: auto;
+  height: 40px;
+  border-radius: 25px;
+}
+.title{
+  font-weight: 700;
+}
+.highlight{
+  color: yellow;
+}
+.hidden{
+  display: none;
+}

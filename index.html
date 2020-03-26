@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tebak Syntax</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tebak<span class="highlight">Syntax</span></h1>
+      <div id="timer"></div>
+      <div id="score">
+        <span class="title">Score : </span>
+        <span id="points">0</span>
+        <span class="highlight">Points</span>
+      </div>
+    </header>
+    <section id="description">
+      <h1></h1>
+      <p></p>
+    </section>
+    <section id="jawaban">
+      <input type="text" name="answer" value="">
+      <button type="button" class="hidden" id="submitJawaban" name="submitJawaban" onclick="submitJawaban(currentSoal);">Submit</button>
+      <button type="button" class="hidden" id="hintJawaban" name="hintJawaban" onclick="tampilHint(currentSoal);">Hint</button>
+    </section>
+    <script src="js/main.js" type="text/javascript">
+    </script>
+  </body>
+</html>
