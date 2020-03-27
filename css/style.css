@@ -39,7 +39,7 @@ header h1{
   margin-left: 10px;
 }
 #description,#jawaban{
-  margin-top: 50px;
+  margin-top: 20px;
   letter-spacing: 1.5px;
   text-align: center;
   color: #FFFFFF;
@@ -48,12 +48,17 @@ header h1{
   margin-right: auto;
 }
 #description h1{
-  font-size: 30px;
+  font-size: 24px;
 }
 #description p{
-  font-size: 20px;
+  font-size: 16px;
 }
-
+#jawaban{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 #jawaban input{
   text-transform: uppercase;
